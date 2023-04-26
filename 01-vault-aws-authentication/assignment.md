@@ -21,7 +21,7 @@ notes:
 
     We will first work on authenticating our application to Vault so it can retrieve a login token.
 
-    <img src="https://github.com/Andrew-Klaas/instruqt-zt-lab/raw/main/assets/diagrams/0-auth.png" width=800px height=400px>
+    <img src="https://github.com/demoland/zt-lab/raw/main/assets/diagrams/0-auth.png" width=800px height=400px>
 tabs:
 - title: Server
   type: terminal
