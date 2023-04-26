@@ -1,0 +1,25 @@
+slug: opengovcon-zero-trust-application-security
+id: 0vcwy7gg5ziu
+version: 0.0.1
+title: OpenGovCon - Zero Trust Application Security
+teaser: Leverage the HashiCorp stack to secure application infrastructure
+description: |-
+  This workshop will provide hands on experience securing an application stack with several HashiCorp tools.
+  Vault will be use to secure application credentials and customer data.
+  Consul will enforce mTLS and network policy.
+  Finally, Boundary will secure remote access for human users such as DBAs and Linux admins.
+
+  [Workshop Slides](https://docs.google.com/presentation/d/1og3T3rfXtMiaJChL2TEBkUH01Tz5vDSXJR1PDegs1Po/edit#slide=id.g104306241d1_3_0)
+icon: https://storage.googleapis.com/instruqt-hashicorp-tracks/logo/HashiCorp_Icon_Black.png
+tags:
+- Vault
+- Consul
+- Boundary
+owner: hashicorp
+developers:
+- daniel.fedick@hashicorp.com
+lab_config:
+  overlay: false
+  width: 33
+  position: right
+checksum: "3278977562026974915"
