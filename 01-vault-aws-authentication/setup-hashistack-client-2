@@ -25,7 +25,7 @@ curl -fsSL -o /tmp/consul.zip "https://releases.hashicorp.com/consul/${CONSUL_VE
 unzip -o -d /usr/local/bin/ /tmp/consul.zip
 
 cd /tmp
-git clone https://github.com/Andrew-Klaas/instruqt-zt-lab.git
+git clone https://github.com/demoland/zt-lab.git
 
 # Copy additional files.
 ENVOY_VERSION="1.18.3"
@@ -36,7 +36,7 @@ mv envoy-v${ENVOY_VERSION}-linux-amd64/bin/envoy /usr/local/bin/envoy
 rm -rf envoy-v${ENVOY_VERSION}-linux-amd64.tar.xz envoy-v${ENVOY_VERSION}-linux-amd64
 
 
-cp instruqt-zt-lab/assets/systemd-files/consul.service /etc/systemd/system/consul.service
+cp zt-lab/assets/systemd-files/consul.service /etc/systemd/system/consul.service
 
 mkdir /etc/consul.d
 mkdir /tmp/consul

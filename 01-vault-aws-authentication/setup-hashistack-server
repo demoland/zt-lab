@@ -30,17 +30,16 @@ curl -fsSL -o /tmp/boundary.zip "https://releases.hashicorp.com/boundary/${BOUND
 unzip -o -d /usr/local/bin/ /tmp/boundary.zip
 
 cd /tmp
-git clone https://github.com/Andrew-Klaas/instruqt-zt-lab.git
-
+git clone https://github.com/demoland/zt-lab.git
 # Copy additional files.
-cp instruqt-zt-lab/assets/systemd-files/envoy /usr/local/bin/envoy
-cp instruqt-zt-lab/assets/systemd-files/consul.service /etc/systemd/system/consul.service
-cp instruqt-zt-lab/assets/systemd-files/vault.service /etc/systemd/system/vault.service
-cp instruqt-zt-lab/assets/systemd-files/boundary-controller.service /etc/systemd/system/boundary-controller.service
-cp instruqt-zt-lab/assets/systemd-files/boundary-worker.service /etc/systemd/system/boundary-worker.service
-cp instruqt-zt-lab/assets/systemd-files/boundary.service /etc/systemd/system/boundary.service
+cp zt-lab/assets/systemd-files/envoy /usr/local/bin/envoy
+cp zt-lab/assets/systemd-files/consul.service /etc/systemd/system/consul.service
+cp zt-lab/assets/systemd-files/vault.service /etc/systemd/system/vault.service
+cp zt-lab/assets/systemd-files/boundary-controller.service /etc/systemd/system/boundary-controller.service
+cp zt-lab/assets/systemd-files/boundary-worker.service /etc/systemd/system/boundary-worker.service
+cp zt-lab/assets/systemd-files/boundary.service /etc/systemd/system/boundary.service
 
-cp -r instruqt-zt-lab/assets/terraform-boundary /root/
+cp -r zt-lab/assets/terraform-boundary /root/
 
 mkdir /etc/consul.d
 mkdir /etc/vault.d
